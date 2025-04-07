@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Goals - Victor Garcia</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="glass">
+      <header>
+        <h1>Victor Garcia</h1>
+        <h2>Software Engineer</h2>
+        <p>
+          123 Fake St. <span>|</span> Chicago, IL 60629 <span>|</span> (123)
+          456-7890 <span>|</span> vgarcia@fake.email
+        </p>
+      </header>
+      <nav>
+        <a href="coverPage.html">Cover Letter</a>
+        <a href="resumePage.html">Resume</a>
+        <a href="goalPage.html">Career Goals</a>
+      </nav>
+
+      <main>
+        <section>
+          <h2>Career Goals</h2>
+          <p>
+            As an IT professional passionate about leadership and innovation, my
+            long-term goals include:
+          </p>
+          <br />
+          <ul>
+            <li>
+              Becoming a thought leader in IT management by developing
+              cutting-edge systems and fostering organizational change.
+            </li>
+            <li>
+              Enhancing organizational efficiency and team cohesion through
+              evidence-based leadership strategies.
+            </li>
+            <li>
+              Leveraging emerging technologies to drive transformative solutions
+              in businesses and communities.
+            </li>
+            <li>
+              Continuously improving my technical and leadership expertise to
+              empower teams and contribute to long-term organizational success.
+            </li>
+          </ul>
+        </section>
+
+        <div id="media-container">
+          <img
+            src="images/career goals.png"
+            alt="Group of people working together in office"
+          />
+          <video
+            src="media/typingVideo.mp4"
+            autoplay
+            muted
+            loop
+            controls
+          ></video>
+        </div>
+
+        <div id="form-container">
+          <h3>Contact Me</h3>
+          <form
+            id="contact-me"
+            action="https://wp.zybooks.com/form-viewer.php"
+            target="_blank"
+            method="post"
+          >
+            <div id="first">
+              <p><label for="first-name">First Name</label></p>
+              <p>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first"
+                  placeholder="required"
+                  required
+                />
+              </p>
+            </div>
+            <div id="last">
+              <p><label for="last-name">Last Name</label></p>
+              <p><input type="text" id="last-name" name="last" /></p>
+            </div>
+            <div id="company">
+              <p><label for="company-name">Company</label></p>
+              <p><input type="text" id="company-name" name="company" /></p>
+            </div>
+            <div id="email">
+              <p><label for="e-mail">E-mail</label></p>
+              <p>
+                <input
+                  type="email"
+                  id="e-mail"
+                  name="email"
+                  placeholder="required"
+                  required
+                />
+              </p>
+            </div>
+            <div id="phone">
+              <p><label for="number">Phone Number</label></p>
+              <p>
+                <input
+                  type="tel"
+                  id="number"
+                  name="phone"
+                  pattern="[0-9]{10}"
+                />
+              </p>
+            </div>
+            <div id="contact-type">
+              <p><label for="contact">Contact Type</label></p>
+              <p>
+                <select name="contact" id="contact">
+                  <option value="Phone">Phone</option>
+                  <option value="Email">E-mail</option>
+                  <option value="Text">Text</option>
+                </select>
+              </p>
+            </div>
+            <div class="item-container">
+              <fieldset>
+                <legend>Preferred Time</legend>
+                <div id="time">
+                  <div>
+                    <p><input type="radio" id="am" name="time" value="am" /></p>
+                    <p><label for="am">A.M.</label></p>
+                  </div>
+
+                  <div>
+                    <p><input type="radio" id="pm" name="time" value="pm" /></p>
+                    <p><label for="pm">P.M.</label></p>
+                  </div>
+
+                  <div>
+                    <p>
+                      <input type="radio" id="any" name="time" value="any" />
+                    </p>
+                    <p><label for="any">Anytime</label></p>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div id="text-area">
+              <p><label for="message">Message</label></p>
+              <p><textarea name="message" id="message"></textarea></p>
+            </div>
+            <div id="submit">
+              <button onmousedown="sendSound.play()">
+                <img src="images/sendIcon.ico" alt="sending icon" />
+              </button>
+            </div>
+          </form>
+        </div>
+        <script>
+          let sendSound = new Audio();
+          sendSound.src = "media/sendSound.mp3";
+        </script>
+      </main>
+    </div>
+    <footer>
+      <p>&copy; 2025 Victor Garcia. All rights reserved.</p>
+      <a href="#">Back to top</a>
+    </footer>
+  </body>
+</html>
